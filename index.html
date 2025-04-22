@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Selector</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .language-selector {
+      display: flex;
+      gap: 3rem;
+      font-size: 6rem;
+    }
+
+    .language-selector span {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .language-selector span:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="language-selector">
+    <span title="English">🇬🇧</span>
+    <span title="Russian">🇷🇺</span>
+    <span title="Bulgarian">🇧🇬</span>
+  </div>
+</body>
+</html>
