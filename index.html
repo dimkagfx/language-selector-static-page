@@ -8,35 +8,39 @@
     body {
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background: #f7f0e4;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      font-family: Arial, sans-serif;
     }
 
     .language-selector {
       display: flex;
       gap: 3rem;
-      font-size: 6rem;
     }
 
-    .language-selector span {
-      cursor: pointer;
+    .language-selector a img {
+      height: 150px;
       transition: transform 0.2s;
     }
 
-    .language-selector span:hover {
-      transform: scale(1.2);
+    .language-selector a img:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
 <body>
   <div class="language-selector">
-    <span title="English">🇬🇧</span>
-    <span title="Russian">🇷🇺</span>
-    <span title="Bulgarian">🇧🇬</span>
+    <a href="https://withjoy.com/dima-and-moni" target="_blank">
+      <img src="flag-en.png" alt="English" />
+    </a>
+    <a href="https://withjoy.com/dima-and-moni" target="_blank">
+      <img src="flag-ru.png" alt="Russian" />
+    </a>
+    <a href="https://withjoy.com/dima-and-moni" target="_blank">
+      <img src="flag-bg.png" alt="Bulgarian" />
+    </a>
   </div>
 </body>
 </html>
