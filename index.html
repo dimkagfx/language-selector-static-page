@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Language Selector</title>
   <style>
-    body {
+      body {
       margin: 0;
       padding: 0;
       background: #f7f0e4;
@@ -17,29 +17,44 @@
 
     .language-selector {
       display: flex;
-      gap: 3rem;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     }
 
     .language-selector a img {
       height: 150px;
       transition: transform 0.2s;
+      max-width: 100%;
     }
 
     .language-selector a img:hover {
       transform: scale(1.1);
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 600px) {
+      .language-selector {
+        flex-direction: column;
+      }
+
+      .language-selector a img {
+        height: 120px; /* slightly smaller for mobile */
+      }
     }
   </style>
 </head>
 <body>
   <div class="language-selector">
     <a href="https://withjoy.com/dima-and-moni" target="_blank">
+      <img src="flag-bg.png" alt="Bulgarian" />
+    </a>
+    <a href="https://withjoy.com/dima-and-moni" target="_blank">
       <img src="flag-en.png" alt="English" />
     </a>
     <a href="https://withjoy.com/dima-and-moni" target="_blank">
       <img src="flag-ru.png" alt="Russian" />
-    </a>
-    <a href="https://withjoy.com/dima-and-moni" target="_blank">
-      <img src="flag-bg.png" alt="Bulgarian" />
     </a>
   </div>
 </body>
